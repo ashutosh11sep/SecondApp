@@ -1,0 +1,10 @@
+<%= form_for :category, url: categories_path do |f| %>
+  <p>
+    <%= f.label :category_id %><br>
+    <%= f.text_field :category_id%>
+  </p>
+ <p>
+    <%= f.submit %>
+  </p>
+<% end %>
+<%= link_to 'Back', categories_path %>
